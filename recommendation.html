@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recommendations</title>
+  <link rel="stylesheet" href="recommendation.css">
+</head>
+<body>
+     <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">🌿 AgriSmart</div>
+
+    <ul class="nav-links">
+      <li><a class="nav-item" href="home.html">Home</a></li>
+      <li><a class="nav-item" href="analyze.html">Analyze Soil</a></li>
+      
+      <li><a class="nav-item" href="dashboard.html">Dashboard</a></li>
+      <li><a class="nav-item" href="weather.html">Weather</a></li>
+      <li><a class="nav-item" href="contact.html">Contact</a></li>
+    </ul>
+
+    <button class="login-btn" onclick="goToLogin()" id="authBtn" class="login-btn">Login</button>
+  </nav>  
+
+  <div class="container">
+
+    <!-- TOP SUMMARY -->
+    <div class="summary" id="summary"></div>
+
+    <!-- RESULTS -->
+    <div id="results"></div>
+
+    <!-- SUCCESS MESSAGE -->
+    <div class="success">
+      ✔ Results saved to your dashboard.
+    </div>
+
+  </div>
+
+  
+
+  <footer>
+    <p>© 2026 AgriSmart | Sustainable Farming Solution</p>
+  </footer>
+
+  <script src="../recommendation.js">
+    function goToLogin() {
+      window.location.href = "login.html";
+  }
+  </script>
+</body>
+</html>

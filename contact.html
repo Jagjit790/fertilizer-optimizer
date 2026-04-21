@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Analyze Soil</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+   <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">🌿 AgriSmart</div>
+
+    <ul class="nav-links">
+      <li><a class="nav-item " href="home.html">Home</a></li>
+      <li><a class="nav-item" href="analyze.html">Analyze Soil</a></li>
+      <li><a class="nav-item" href="dashboard.html">Dashboard</a></li>
+      <li><a class="nav-item" href="weather.html">Weather</a></li>
+      <li><a class="nav-item active">Contact</a></li>
+    </ul>
+
+    <button class="login-btn" onclick="goToLogin()" id="authBtn" class="login-btn">Login</button>
+  </nav>
+
+  <section class="contact" id="contact">
+        <h1 style="text-align: center;">Contact</h1>
+        <div class="cont">
+            <div class="cont_info">
+            <div class="icon" >  
+                <div class="i" > 
+                    <i class="fa fa-map-marker" style="font-size: 42px;" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <p>Address<br>
+                    <i style="color: gray;">V.P.O Hardaspur, District KApurthala, Punjab, India</i>
+                    </p>
+                </div>     
+            </div>
+            <div class="icon">  
+                <div class="i">
+                    <i class="fa fa-phone" style="font-size: 42px;" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <p>Call Me <br>
+                    <i style="color: gray;">81462-64594</i></p>
+                </div>     
+            </div>
+             <div class="icon">  
+                <div class="i">
+                    <i class="fa fa-envelope" style="font-size: 42px;" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <p>Email <br>
+                    <i style="color: gray">Singhjagjit3914@gmail.com</i>
+                    </p>
+
+                </div>  
+               
+            </div>
+            <div>
+                <div style="font-size: 24px;display: flex; gap:5px; margin-top: 25px; justify-content: center;">
+
+                    <a href="https://www.linkedin.com/in/jagjit-singh-746304322/"
+                    target="_blank">
+                        <i class="fa fa-linkedin-square" style="color: #007bff;" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <i class="fa fa-whatsapp" style="color: lightgreen;" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://github.com/Jagjit790" target="_blank">
+                        <i class="fa fa-github" style="color: black;" aria-hidden="true"></i>
+                    </a>
+                <!-- THIS IS THE LOWER PART OF THIS FORM : social icons + Google map -->
+                <div style="margin-top: 1px;">
+                   <a href="https://www.instagram.com/_jaggi_.47/" target="_blank">
+                    <img src="./assets/Instagram_icon.png" alt=  height="20px" width="22px">
+                    </a>
+                </div>
+                </div>  
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.7021875856867!2d75.69088927505855!3d31.25666666012424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f000ba48fbf%3A0x35f76da73f5a4f7e!2sLovely%20professional%20University!5e0!3m2!1sen!2sin!4v1761580375916!5m2!1sen!2sin" 
+                width="90%" 
+                height="100px" 
+                style="border:0; border-radius: 10px; margin: 10px 20px;"
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            </div>
+
+            <div class="cont_form">
+                <form id = "submit_form" action="">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+                    <input type="text" placeholder="Enter Your Email" required><br>
+                    <input type="text" id="Subject" name="Subject" placeholder="Subject" required><br>
+                    <textarea placeholder="Your message" required></textarea>
+                    <div class="button">
+                        <p>Send Message</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+</section>
+
+  <footer>
+    <p>© 2026 AgriSmart | Sustainable Farming Solution</p>
+</footer>
+
+    <script src="contact.js">
+    </script>
+</body>
+</html>

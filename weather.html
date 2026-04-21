@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather | AgriSmart</title>
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">🌿 AgriSmart</div>
+
+  <ul class="nav-links">
+    <li><a class="nav-item" href="home.html">Home</a></li>
+    <li><a class="nav-item" href="analyze.html">Analyze Soil</a></li>
+    <li><a class="nav-item" href="dashboard.html">Dashboard</a></li>
+    <li><a class="nav-item active" href="weather.html">Weather</a></li>
+    <li><a class="nav-item" href="contact.html">Contact</a></li>
+  </ul>
+
+  <a href="login.html">
+    <button class="login-btn" onclick="goToLogin()" id="authBtn" class="login-btn">Login</button>
+  </a>
+</nav>
+
+<!-- MAIN -->
+<div class="container">
+
+  <h1>Weather Conditions</h1>
+  <p class="subtitle">Current weather data for fertilizer timing</p>
+
+  <!-- 🔥 CITY NAME (NEW) -->
+  <h2 id="cityName" style="margin-bottom: 20px; color: #2e7d32;">
+    Loading location...
+  </h2>
+
+  <!-- WEATHER CARDS -->
+  <div class="weather-grid">
+
+    <div class="card">
+      <div class="icon">🌡️</div>
+      <p>Temperature</p>
+      <h2 id="temp">Loading...</h2>
+    </div>
+
+    <div class="card">
+      <div class="icon">💧</div>
+      <p>Humidity</p>
+      <h2 id="humidity">Loading...</h2>
+    </div>
+
+    <div class="card">
+      <div class="icon">🌧️</div>
+      <p>Rainfall</p>
+      <h2 id="rain">Loading...</h2>
+    </div>
+
+    <div class="card">
+      <div class="icon">🌬️</div>
+      <p>Forecast</p>
+      <h2 id="forecast">Loading...</h2>
+    </div>
+
+  </div>
+
+  <!-- SUGGESTION -->
+  <div class="suggestion">
+    <h3>🌾 Weather-Based Suggestion</h3>
+    <p id="suggestionText">Loading recommendation...</p>
+  </div>
+
+  <p class="note">
+    * Live weather data powered by API.
+  </p>
+
+</div>
+
+<footer>
+    <p>© 2026 AgriSmart | Sustainable Farming Solution</p>
+</footer>
+
+<script src="weather.js"></script>
+</body>
+</html>

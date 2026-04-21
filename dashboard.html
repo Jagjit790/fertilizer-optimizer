@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - AgriSmart</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<!-- NAVBAR (same as yours, don't change) -->
+<nav class="navbar">
+  <div class="logo">🌿 AgriSmart</div>
+
+  <ul class="nav-links">
+    <li><a class="nav-item" href="home.html">Home</a></li>
+    <li><a class="nav-item" href="analyze.html">Analyze Soil</a></li>
+    
+    <li><a class="nav-item active">Dashboard</a></li>
+    <li><a class="nav-item" href="weather.html">Weather</a></li>
+    <li><a class="nav-item" href="contact.html">Contact</a></li>
+  </ul>
+
+  <button class="login-btn" onclick="goToLogin()" id="authBtn" class="login-btn">Login</button>
+</nav>
+
+<!-- MAIN -->
+<div class="container">
+
+  <h1>Analysis Dashboard</h1>
+  <p class="subtitle">Your soil analysis history</p>
+
+  <div id="dashboardList"></div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 AgriSmart | Sustainable Farming Solution</p>
+</footer>
+
+<script src="../dashboard.js">
+
+</script>
+</body>
+</html>

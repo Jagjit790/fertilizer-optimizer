@@ -1,0 +1,173 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7f6;
+  margin: 0;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: black;
+  color: white;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  cursor: pointer;
+  gap: 20px;
+  list-style: none;
+}
+
+
+.nav-item {
+  padding: 8px 15px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+/* Hover */
+.nav-item:hover {
+  background: #333;
+}
+
+/* Active (STRONGER selector) */
+.nav-item.active {
+  background: #2e8b57;
+  color: white;
+}
+
+/* BUTTON */
+.login-btn,
+.cta-btn {
+  background: #2e8b57;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover,
+.cta-btn:hover {
+  background: #ccc;
+  color: black;
+}
+
+
+/* CONTAINER */
+.container {
+  height: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+/* EMPTY STATE */
+.empty {
+  background: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.empty a {
+  display: inline-block;
+  margin-top: 10px;
+  background: #2e8b57;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* DASH CARD */
+.dash-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transition: 0.2s;
+}
+
+.dash-card:hover {
+  transform: translateY(-2px);
+}
+
+/* TOP ROW */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top h3 {
+  margin: 0;
+}
+
+.date {
+  font-size: 12px;
+  color: gray;
+}
+
+/* DELETE BUTTON */
+.top button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* TAGS */
+.tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.tags span {
+  background: #eee;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.green {
+  background: #d4edda !important;
+  color: #155724;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  margin-bottom: 0;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
