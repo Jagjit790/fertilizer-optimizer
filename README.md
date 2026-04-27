@@ -1,4 +1,4 @@
-# AgriSmart 🌿
+# AgriSmart 
 
 A full-stack web application that helps farmers optimize fertilizer usage for better crop yields through soil analysis, weather data, and smart recommendations.
 
